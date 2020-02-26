@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         imgMood.setVisibility(View.INVISIBLE);
 
         // constantly check the user input, if [1-1000], set
-        // button visible
+        // butt on visible
         button = findViewById(R.id.btn_check);
         display = findViewById(R.id.tv_info);
         finalDisplay = findViewById(R.id.tv_final_display);
@@ -141,7 +141,10 @@ public class MainActivity extends AppCompatActivity {
      */
     private int generatorGuess() {
         //todo : implement the random number generator
-        return 345;
+        //生成1-1000的数字
+        int ret=(int) ((Math.random() * 9 + 1) * (100));
+        Log.e("answer","right answer is "+ret);
+        return  ret;
     }
 
     /**
